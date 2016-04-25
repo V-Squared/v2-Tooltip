@@ -64,19 +64,19 @@ At a later point we will create gh-pages site with short code examples and worki
 All scripts you need to load to make the Code Examples work:
 
 ### Angular
- ```
+ ```JS
 <script src="your/path/to/file/angular.min.js"></script>
 ```
 
 ### ngAnimate (if animation)
 
-```
+```JS
 <script src="your/path/to/file/angular-animate.min.js"></script>
 ```
 
 ### v2Tooltip
 
-```
+```JS
 <script src="your/path/to/file/v2Tooltip.js"></script>
 ```
 
