@@ -1,5 +1,5 @@
 # v2-Tooltip
-*SVG and HTML responsive Angular Tooltip Directive. Supports: Touch Screen, Mouse Over and Links and HTML in Tooltip.*
+*SVG and HTML responsive Angular Tooltip Directive. Supports: Touch Screen, Mouse Over, Links and HTML in Tooltip.*
 
 
 # Key Features
@@ -15,9 +15,11 @@
 - **Easy styling of Tooltip:** With its CSS.
 
 
-# Working Demo & Code
+# v2-Tooltip Demo <a name="demo"></a>
 ## Demo
 - [Interactive Puzzle with Tooltips and Links](http://v-squared.github.io/#delivering-puzzle)
+ 
+## Features of Demo
 - **Open Tooltip**
    - **On PC:** Hover over puzzle to get Tooltip
    - **On Tablet:** Tab the Puzzle piece to get Tooltip
@@ -27,7 +29,9 @@
 - **Responsive**
    - **Any Screeen Size:** Works on all screen sizes ranging from mobile phone to big screen
    - **Scaling support:** If SVG is bigger than screen size it scales down to fit. All Tooltip locations are scaled accordingly.
-- **Show Selection:** When entering a shape it instantly shows that it is selected by changing the background color. (This is not a feature of the v2-Tooltip, but it is a feature of the Demo to help the user understand which element the tooltip refers to.)
+- **Show Selection:** When entering a shape it instantly shows that it is selected by changing the background color. (*1)
+
+(*1) Technically this is not a feature of the v2-Tooltip, but it is a feature that any SVG tooltip implementation should have to help the user understand which element the tooltip refers to.
 
 
 
@@ -38,38 +42,38 @@ v2-Tooltip is an [Angular](https://angularjs.org/) Directive.
 ## CSS Code
 Contains all styling of the Tooltip.
 
-# Dependencies
+
+
+
+
+# How to make it work
+At a later point we will create gh-pages site with short code examples and working demos and a tutorial. But until then please refer to the [working demo](http://v-squared.github.io/#delivering-puzzle). This is the link to its GitHub Repository → https://github.com/V-Squared/V-Squared.github.io. All code is contained in the index.html file.
+
+
+
+## Dependencies
 All scripts you need to load to make the Code Examples work:
 
-## Angular
+### Angular
  ```
 <script src="your/path/to/file/angular.min.js"></script>
 ```
 
-## ngAnimate (if animation)
+### ngAnimate (if animation)
 
 ```
 <script src="your/path/to/file/angular-animate.min.js"></script>
 ```
 
-## v2Tooltip
+### v2Tooltip
 
 ```
 <script src="your/path/to/file/v2Tooltip.js"></script>
 ```
 
-If you need more details, please look at the index.html file of → https://github.com/V-Squared/V-Squared.github.io
 
 
-# How to make it work
-## 1. Link v2-
-
-
-## Configuration of Tooltip
-
-
-# Features in Detail
-## SVG Support
+## Example of SVG Element Tooltip
 ### Supports any closed SVG element including *Path*
 Specifically: 
 
@@ -86,7 +90,7 @@ All SVG elements must be filled for the tooltip to work. The fill can be transpa
 </svg>
 ```
 
-## Link in Tooltip <a name="link-in-tooltip"></a>
+## Example of Link in Tooltip <a name="link-in-tooltip"></a>
 ### Usage
 The idea is very simple and practical. The Tooltip offer additional information to an element on the page. And in case the reader is interested in even more information at this time the → more ... link brings him directly to it.
 
@@ -127,4 +131,7 @@ Long content is not a problem if it is interesting to the reader. For our standa
 A great infographics always catches the reader. Making it interactive with tooltips is even more fun. Now most of the content is hidden with tooltips, making the infographics clean. And what the reader is interested in he can uncover and explore via tooltips, like uncovering easter eggs. This way studying content becomes an adventure. The read more link in every tooltip makes it easy to follow the reading path of interest. Now the reader can keep reading what he is interested in while ignoring what he does not care about.
 
 # Reference
+- [v2-Tooltip Demo](http://v-squared.github.io/#delivering-puzzle)
+   - [Features to Demo explained](#demo)
 - [qtip2](http://qtip2.com/) Amazing jQuery Tooltip Plugin with an unbelievable number of features 
+- [AngularJS](https://angularjs.org/) v2-Tooltip is written in AngularJS
