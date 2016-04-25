@@ -27,19 +27,46 @@
 - **Responsive**
    - **Any Screeen Size:** Works on all screen sizes ranging from mobile phone to big screen
    - **Scaling support:** If SVG is bigger than screen size it scales down to fit. All Tooltip locations are scaled accordingly.
-- **Show Selection:** When entering a shape it instantly shows that it is selected by changing the background color.
+- **Show Selection:** When entering a shape it instantly shows that it is selected by changing the background color. (This is not a feature of the v2-Tooltip, but it is a feature of the Demo to help the user understand which element the tooltip refers to.)
 
 
 
+# Distribution of v2-Tooltip
+## Angular Code
+v2-Tooltip is an [Angular](https://angularjs.org/) Directive. 
 
+## CSS Code
+Contains all styling of the Tooltip.
 
-# All Elements
-## JavaScript
-## CSS
-## HTML
+# Dependencies
+All scripts you need to load to make the Code Examples work:
+
 ## Angular
-## SVG
-## Putting it all together
+ ```
+<script src="your/path/to/file/angular.min.js"></script>
+```
+
+## ngAnimate (if animation)
+
+```
+<script src="your/path/to/file/angular-animate.min.js"></script>
+```
+
+## v2Tooltip
+
+```
+<script src="your/path/to/file/v2Tooltip.js"></script>
+```
+
+If you need more details, please look at the index.html file of → https://github.com/V-Squared/V-Squared.github.io
+
+
+# How to make it work
+## 1. Link v2-
+
+
+## Configuration of Tooltip
+
 
 # Features in Detail
 ## SVG Support
@@ -67,6 +94,26 @@ The idea is very simple and practical. The Tooltip offer additional information 
 Implementing it was hard when making it work intuitively with both big screen plus mouse and small screen with touch. In fact we could not find one tooltip plugin that could do it. This feature is why we coded v2-Tooltip. 
 
 The challenge was to create a time out for removing the tooltip to allow for the mouse to leave the element that shows the tooltip and yet keep displaying it long enough to enter the tootip to keep it open, so that the user can navigate to the link and click it.
+
+### Code example to turn on hover
+This code is placed where you define your Angular Module
+
+```Javascript
+angular.module('yourApp', ['ngAnimate','v2.tooltip'], function(tooltipSettingsProvider) {
+    tooltipSettingsProvider.options( {mouseoverTooltip: true} );
+ })
+```
+
+### Link in Tooltip Code Example <a name="code-svg"></a>
+```HTML
+<g v2-tooltip="PC Know How & Tools.<br><a href=&quot;#for-diy&quot; du-smooth-scroll>For DIY</a>" transform="translate(14.247 -568.2)">
+      <rect height="125" width="125" stroke="#000" y="568.79" x="111.43" fill="#fff"/>
+      <text font-size="40px" xml:space="preserve" style="word-spacing:0px;letter-spacing:0px" y="635.93359" x="174.20323" font-family="sans-serif" line-height="125%" fill="#000000"><tspan y="635.93359" x="174.20323" font-size="15px" style="text-anchor:middle;text-align:center">DIY</tspan></text>
+     </g>
+```
+
+
+
 
 
 # Tooltips to make exploring of complex topics fun
