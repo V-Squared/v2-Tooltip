@@ -1,8 +1,17 @@
 # v2-Tooltip
 *SVG and HTML responsive Angular Tooltip Directive. Supports: Touch Screen, Mouse Over, Links and HTML in Tooltip.*
 
+# Table of Contents
+- [Key Features](#features)
+- [v2-Tooltip Demo](#demo)
+- [Distribution of v2-Tooltip](#disti)
+- [How to make it work](#how-to)
+- [User Story of Tooltips making long content fun](#user-story)
+- [Reference](#reference)
 
-# Key Features
+
+
+# Key Features <a name="features"></a>
 - **Lightweight:** Only 7 kB (not minimized) and minimum CPU load
 - **Angular Directive:** Reusable and easy to use. 
 - **SVG Support:** Easy to add Tooltips to SVG due to minimal code. See → [SVG Tooltip Code Example](#code-svg)
@@ -35,7 +44,7 @@
 
 
 
-# Distribution of v2-Tooltip
+# Distribution of v2-Tooltip <a name="disti"></a>
 ## Angular Code
 v2-Tooltip is an [Angular](https://angularjs.org/) Directive. 
 
@@ -46,7 +55,7 @@ Contains all styling of the Tooltip.
 
 
 
-# How to make it work
+# How to make it work <a name="how-to"></a>
 At a later point we will create gh-pages site with short code examples and working demos and a tutorial. But until then please refer to the [working demo](http://v-squared.github.io/#delivering-puzzle). This is the link to its GitHub Repository → https://github.com/V-Squared/V-Squared.github.io. All code is contained in the index.html file.
 
 
@@ -118,9 +127,9 @@ angular.module('yourApp', ['ngAnimate','v2.tooltip'], function(tooltipSettingsPr
 
 
 
+# User Story of Tooltips making long content fun <a name="user-story"></a>
+As an **Author of a Standard Web Site** I was faced with the conundrum to write short enough to not scare away the reader in the beginning yet long enough to satisfiy specilized needs. v2-Tooltip in combination with SVG Infographicsw solves this problem for us in a way I have described below:
 
-
-# Tooltips to make exploring of complex topics fun
 ## Conundrum of long, complex content
 Our content is very complex. A typical reader is only interested in a small part of the content that we offer or respectively not interested in most of our content. Because our content is very networked, it is not possible to structure the content so that each reader can find all what he is interested grouped in one page. This created a conundrum in the past. If we made the page short enough to be attractive then the reader started reading, but left becuase we did not offered enough depth. Yet, when we offered enough depth, we could not capture the reader as it all was too long.
 
@@ -130,7 +139,7 @@ Long content is not a problem if it is interesting to the reader. For our standa
 ## Interactive Infographics to spice things up
 A great infographics always catches the reader. Making it interactive with tooltips is even more fun. Now most of the content is hidden with tooltips, making the infographics clean. And what the reader is interested in he can uncover and explore via tooltips, like uncovering easter eggs. This way studying content becomes an adventure. The read more link in every tooltip makes it easy to follow the reading path of interest. Now the reader can keep reading what he is interested in while ignoring what he does not care about.
 
-# Reference
+# Reference <a name="reference"></a>
 - [v2-Tooltip Demo](http://v-squared.github.io/#delivering-puzzle)
    - [Features to Demo explained](#demo)
 - [qtip2](http://qtip2.com/) Amazing jQuery Tooltip Plugin with an unbelievable number of features 
