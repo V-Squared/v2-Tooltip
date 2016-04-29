@@ -22,6 +22,7 @@
 - **Link in Tooltip:** E.g. a "Read More" link for the reader who wants to know more than the Tooltip can offer. → [more](#link-in-tooltip)
 - **Sanitized HTML in Tooltip:** Links, Pictures, Styling. All supported in v2-Tooltip.
 - **Easy styling of Tooltip:** With its CSS.
+- **Tooltip Attribute Configuration:** You can tweak: **1)** Placement **2)** Arrow Height **3)** Mouse over Tooltip **4)** Timeout delay
 
 
 # v2-Tooltip Demo <a name="demo"></a>
